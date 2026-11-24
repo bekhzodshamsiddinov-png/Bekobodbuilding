@@ -127,6 +127,9 @@ xonadon sahifasi, ariza → baza → Telegram). Keyingisi: Supabase loyihasini u
   validatsiya + telefon/umumiy rate limit). API qo'shimcha: Origin tekshiruvi, IP limit, honeypot, 4 KB limit.
 - **Rollar**: yangi foydalanuvchi `role = NULL` (hech narsa ko'rmaydi) — owner/admin tasdiqlaydi. Menejer narxni
   o'zgartira olmaydi (trigger), faqat holatni. Faqat owner boshqa owner tayinlaydi.
+- Bosh sahifa tuzilmasi (2026-11-24, fazoavenue.uz tahlilidan keyin): raqamlangan bo'limlar (`SectionHead`),
+  raqamlar bandi, 2 ta scroll-film (Webuy), afzalliklar, infratuzilma videolari, rejalar katalogi, o'rtada forma,
+  uylar, to'lov kalkulyatori, galereya, sayohat, aloqa; doimiy kontakt tugmasi (`FloatingContact`).
 - `sayohat` to'liq ekranli bo'lgani uchun `app/[locale]/(immersive)/sayohat` da (sayt header/footer'isiz).
 
 ## Buyruqlar
@@ -153,5 +156,8 @@ pnpm seed:gen       # lib/demo/sadaf.ts → supabase/seed.sql
 - Xonadonlar ro'yxati (Excel: bino, podyezd, qavat, raqam, xona, m², narx, holat).
 - Bino 3D modeli (GLB/FBX/Revit) va har xonadon turiga 360° render panoramalar (8K).
 - Bo'lib to'lash shartlari, hamkor banklar, telefon, manzil, ish vaqti, logotip.
+- Joylashuv: aniq manzil/koordinata va yaqin obyektlar (maktab, bozor, shifoxona, vokzal) gacha daqiqalar —
+  bosh sahifadagi "Joylashuv" bo'limi va xarita shular kelgach qo'shiladi (hozir uydirma raqam qo'yilmagan).
+- Quruvchi kompaniya haqida: nomi, tarixi, topshirilgan loyihalar, hujjatlar/litsenziya, qurilish jarayoni fotolari.
 
 Javob kelguncha Sadaf Residence namunaviy ma'lumotlari bilan ishlanadi (`supabase/seed.sql`).

@@ -15,10 +15,12 @@ export function ApartmentPicker({
   buildings,
   units,
   initialBuilding,
+  initialRooms = [],
 }: {
   buildings: PickerBuilding[];
   units: PickerUnit[];
   initialBuilding: string;
+  initialRooms?: number[];
 }) {
   const t = useTranslations("picker");
   const tb = useTranslations("building");
@@ -28,7 +30,7 @@ export function ApartmentPicker({
 
   const [code, setCode] = useState(initialBuilding);
   const [view, setView] = useState<View>("facade");
-  const [filters, setFilters] = useState<Filters>({ rooms: [], onlyFree: false, side: "any" });
+  const [filters, setFilters] = useState<Filters>({ rooms: initialRooms, onlyFree: initialRooms.length > 0, side: "any" });
   const building = buildings.find((b) => b.code === code) ?? buildings[0];
   const [sel, setSel] = useState(() => defaultSelection(building, units));
 

@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { Link, usePathname } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 import { LogoMark, LogoText } from "@/components/ui/Logo";
+import { site } from "@/lib/site";
 
 /**
  * Fixed site header. Over a full-bleed hero (`overlay`) it starts transparent
@@ -45,6 +46,7 @@ export function Header() {
   const links = [
     { href: "/xonadonlar", label: t("apartments") },
     { href: "/sayohat", label: t("tour") },
+    { href: "/#rejalar", label: t("plans") },
     { href: "/#uylar", label: t("buildings") },
     { href: "/aloqa", label: t("contact") },
   ] as const;
@@ -83,6 +85,16 @@ export function Header() {
 
       <div className="flex items-center gap-2">
         <LocaleSwitch current={locale} solid={solid} label={t("language")} />
+        {site.phoneHref && (
+          <a href={site.phoneHref} className="hidden items-center gap-2.5 px-2 font-mono text-[12.5px] tracking-[0.04em] no-underline xl:flex">
+            <span className={`grid h-9 w-9 place-items-center rounded-full ${solid ? "bg-ink-1 text-paper" : "bg-white/15"}`} aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" className="h-4 w-4">
+                <path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2" />
+              </svg>
+            </span>
+            {site.phone}
+          </a>
+        )}
         <Link
           href="/xonadonlar"
           className={`btn hidden !min-h-0 !px-[18px] !py-[11px] lg:inline-flex ${

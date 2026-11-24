@@ -5,7 +5,7 @@ import type { PickerBuilding, PickerUnit } from "@/components/site/picker/types"
 import { SampleNotice } from "@/components/site/SampleNotice";
 import { getInventory } from "@/lib/data/inventory";
 
-type Props = { params: Promise<{ locale: string }>; searchParams: Promise<{ bino?: string | string[] }> };
+type Props = { params: Promise<{ locale: string }>; searchParams: Promise<{ bino?: string | string[]; xona?: string | string[] }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
@@ -20,6 +20,8 @@ export default async function ApartmentsPage({ params, searchParams }: Props) {
   const inv = await getInventory();
   const sp = await searchParams;
   const wanted = typeof sp.bino === "string" ? sp.bino : "";
+  const xona = Number(typeof sp.xona === "string" ? sp.xona : NaN);
+  const initialRooms = Number.isInteger(xona) && xona >= 1 && xona <= 3 ? [xona] : [];
   const initial = inv.buildings.some((b) => b.code === wanted) ? wanted : inv.buildings[0]?.code;
 
   const buildings: PickerBuilding[] = inv.buildings.map((b) => ({
@@ -58,7 +60,7 @@ export default async function ApartmentsPage({ params, searchParams }: Props) {
           </div>
           <p className="m-0 max-w-[40ch] text-[15px] text-muted">{t("hint")}</p>
         </div>
-        {initial ? <ApartmentPicker key={initial} buildings={buildings} units={units} initialBuilding={initial} /> : null}
+        {initial ? <ApartmentPicker key={`${initial}-${initialRooms.join()}`} initialRooms={initialRooms} buildings={buildings} units={units} initialBuilding={initial} /> : null}
         {inv.sample && <SampleNotice className="mt-8" />}
       </div>
     </section>
