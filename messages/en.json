@@ -1,0 +1,330 @@
+{
+  "meta": {
+    "title": "Sadaf Residence — Bekabad",
+    "description": "A residential complex of 12- and 16-storey buildings: a car-free courtyard, a playground and shops on the ground floor. Choose your apartment online."
+  },
+  "nav": {
+    "home": "Home",
+    "tour": "Tour",
+    "apartments": "Apartments",
+    "buildings": "Buildings",
+    "contact": "Contact",
+    "cta": "Book a viewing",
+    "menu": "Menu",
+    "close": "Close",
+    "language": "Language",
+    "skip": "Skip to content"
+  },
+  "common": {
+    "residence": "RESIDENCE",
+    "sample": "Sample data: prices and statuses will be replaced with the sales team's list.",
+    "floor": "Floor {n}",
+    "entrance": "Entrance {n}",
+    "rooms": "{n, plural, =0 {Studio} one {# bedroom} other {# rooms}}",
+    "apartmentNo": "No. {n}",
+    "back": "Back",
+    "more": "Details",
+    "all": "All",
+    "loading": "Loading…"
+  },
+  "status": {
+    "free": "Available",
+    "reserved": "Reserved",
+    "sold": "Sold",
+    "hidden": "Hidden"
+  },
+  "orientation": {
+    "yard": "Courtyard side",
+    "street": "Street side"
+  },
+  "home": {
+    "eyebrow": "Residential complex",
+    "lead": "12- and 16-storey buildings, a car-free enclosed courtyard, a playground and shops on the ground floor. Choose your apartment right here.",
+    "pick": "Choose an apartment",
+    "tour": "Interactive tour",
+    "onSale": "{n} apartments available",
+    "factBuildings": "building types",
+    "factFloors": "floors",
+    "factYard": "courtyard",
+    "yardValue": "Enclosed",
+    "scroll": "Scroll down",
+    "aboutEyebrow": "About",
+    "aboutTitle": "Homes in the city, far from its noise",
+    "aboutP1": "The complex has three building types: a 12-storey single-entrance, a 12-storey two-entrance and a 16-storey five-entrance building. They enclose the courtyard, so it stays quiet and safe inside.",
+    "aboutP2": "Lower floors are clad in brick, upper floors in light render. Balconies have patterned screens. Shops and services face the street on the ground floor.",
+    "stepsEyebrow": "How it works",
+    "stepsTitle": "Your apartment in three steps",
+    "step1": "Pick a building and floor",
+    "step1t": "Tap a floor on the facade — available apartments appear instantly.",
+    "step2": "View the apartment",
+    "step2t": "Plan, area, price and an instalment estimate on one page.",
+    "step3": "Reserve or leave a request",
+    "step3t": "A manager calls back within 15 minutes and invites you to a viewing.",
+    "buildingsEyebrow": "Buildings",
+    "buildingsTitle": "Three buildings, one style",
+    "pickInBuilding": "Choose in this building",
+    "freeIn": "{n} available",
+    "priceFrom": "from {price}",
+    "tourEyebrow": "Cinematic tour",
+    "tourTitle": "A 9-scene walk through the complex",
+    "tourText": "Walk from the street past the shops, courtyard, playground and buildings. Tap the golden dots — the camera takes you there.",
+    "tourCta": "Start the tour"
+  },
+  "building": {
+    "b12a": {
+      "tab": "12 floors · 1 entrance",
+      "tag": "Building type A",
+      "name": "12-storey, single-entrance building",
+      "text": "A compact single-entrance building. The two lower floors are brick, the upper ones light render. Every apartment has a balcony; corner units look two ways."
+    },
+    "b12b": {
+      "tab": "12 floors · 2 entrances",
+      "tag": "Building type B",
+      "name": "12-storey, two-entrance building",
+      "text": "The longer two-entrance building closes one side of the courtyard. Courtyard-side apartments overlook the playground and greenery."
+    },
+    "b16": {
+      "tab": "16 floors · 5 entrances",
+      "tag": "Building type C",
+      "name": "16-storey, five-entrance building",
+      "text": "The tallest building of the complex. Shops face the street on the ground floor; upper floors open onto city views."
+    },
+    "floors": "Floors",
+    "entrances": "Entrances",
+    "apartments": "Apartments",
+    "onSale": "Available"
+  },
+  "picker": {
+    "eyebrow": "Choose an apartment",
+    "title": "Tap a floor",
+    "hint": "Choose a floor — its apartments appear on the right.",
+    "facade": "Facade",
+    "grid": "Grid",
+    "table": "List",
+    "selectedFloor": "Selected floor",
+    "floorSummary": "{total} apartments · {free} available",
+    "filters": "Filters",
+    "roomsLabel": "Rooms",
+    "onlyFree": "Available only",
+    "orientationLabel": "Side",
+    "maxPrice": "Price (up to)",
+    "any": "Any",
+    "reset": "Reset",
+    "results": "{n} apartments found",
+    "noResults": "No apartments match these filters. Try loosening them.",
+    "open": "Open",
+    "floorList": "Floor list",
+    "colBuilding": "Building",
+    "colEntrance": "Entrance",
+    "colFloor": "Floor",
+    "colNo": "No.",
+    "colRooms": "Rooms",
+    "colArea": "Area",
+    "colPrice": "Price",
+    "colStatus": "Status",
+    "legend": "Legend",
+    "freeOnFloor": "{n} free"
+  },
+  "apartment": {
+    "metaTitle": "{rooms} apartment, {area} — {building}",
+    "breadcrumbs": "Breadcrumbs",
+    "plan": "Floor plan",
+    "planNote": "Schematic plan. The dimensioned plan is available from the sales office.",
+    "tour360": "Inside 360°",
+    "tourSoon": "The 360° panorama is in production. Meanwhile, see the sample apartment in the tour.",
+    "tourOpen": "Open the tour",
+    "specs": "Details",
+    "building": "Building",
+    "entrance": "Entrance",
+    "floor": "Floor",
+    "rooms": "Rooms",
+    "area": "Area",
+    "side": "Side",
+    "balcony": "Balcony",
+    "yes": "Yes",
+    "no": "No",
+    "price": "Price",
+    "pricePerM2": "Price per m²",
+    "book": "Reserve",
+    "ask": "Leave a request",
+    "unavailable": "This apartment is not available. See similar available apartments.",
+    "similar": "Similar apartments",
+    "calc": "Instalment calculator",
+    "calcDown": "Down payment",
+    "calcMonths": "Term",
+    "calcMonthsValue": "{n} months",
+    "calcMonthly": "Monthly payment",
+    "calcNote": "Interest-free estimate. A manager will confirm the exact terms.",
+    "share": "Link"
+  },
+  "lead": {
+    "titleBook": "Reserve the apartment",
+    "titleAsk": "Leave a request",
+    "titleCall": "Request a call",
+    "text": "Leave your number. A manager will call you about the price, payment terms and a viewing time.",
+    "name": "Your name",
+    "namePh": "e.g. Dilshod",
+    "phone": "Phone",
+    "submit": "Send",
+    "sending": "Sending…",
+    "ok": "Thank you, {name}! A manager will call you shortly.",
+    "errName": "Please enter your name.",
+    "errPhone": "Enter the full number: +998 and 9 digits.",
+    "errRate": "Too many attempts. Please try again in a few minutes.",
+    "errOffline": "Online requests are not connected yet. Please call {phone}.",
+    "errGeneric": "The request was not sent. Please call {phone}.",
+    "consent": "By sending, you agree to the processing of your personal data.",
+    "apartment": "Apartment"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "See the home with your own eyes",
+    "text": "Leave your number. The sales team will call about prices, payment terms and available apartments.",
+    "phone": "Phone",
+    "office": "Sales office",
+    "hours": "Opening hours",
+    "hoursValue": "Mon–Sat, 9:00–19:00"
+  },
+  "footer": {
+    "note": "Visualisations are based on project renders. The final appearance may differ.",
+    "rights": "All rights reserved."
+  },
+  "tour": {
+    "eyebrow": "Interactive tour",
+    "intro": "Walk from the street past the shops, courtyard, playground and buildings. Tap the golden dots — the camera takes you there.",
+    "start": "Start the tour",
+    "hint": "9 scenes · about 3 minutes",
+    "skip": "Skip",
+    "pan": "Swipe to look around",
+    "prev": "Previous scene",
+    "next": "Next scene",
+    "scenes": "Scenes",
+    "go": "Go",
+    "info": "Info",
+    "bld": "Building",
+    "pickFloor": "Choose a floor",
+    "price": "Ask the price",
+    "home": "Home"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "text": "The link may be outdated or mistyped.",
+    "cta": "Back to home"
+  },
+  "error": {
+    "title": "Something went wrong",
+    "text": "We couldn't load the data. Please try again shortly.",
+    "retry": "Try again"
+  },
+  "plan": {
+    "living": "Living room",
+    "bedroom": "Bedroom",
+    "kids": "Kids",
+    "kitchen": "Kitchen",
+    "bath": "Bathroom",
+    "wc": "WC",
+    "hall": "Hall",
+    "balcony": "Balcony"
+  },
+  "scenes": {
+    "hero": {
+      "k": "Complex",
+      "t": "View from the street",
+      "p": "The 16-storey building is the complex's highest point. To its left are the 12-storey buildings.",
+      "h0": "16-storey building",
+      "h1": "12-storey buildings",
+      "h2": "Along the street",
+      "h3": "Into the courtyard"
+    },
+    "street": {
+      "k": "Street",
+      "t": "A wide street and a green strip",
+      "p": "A two-lane road along the buildings, trees and lawns.",
+      "h0": "Towards the shops",
+      "h1": "Parking",
+      "h2": "16-storey building"
+    },
+    "shops": {
+      "k": "Shops",
+      "t": "Ground floor — retail",
+      "p": "Shops with display windows face the street, each with its own entrance.",
+      "h0": "Shops",
+      "h1": "Up the facade",
+      "h2": "Towards the courtyard"
+    },
+    "facade": {
+      "k": "Facade",
+      "t": "Patterned screens and wide balconies",
+      "p": "Every apartment has a balcony. The screens give shade and a local touch to the facade.",
+      "h0": "Apartments",
+      "h1": "12-storey building"
+    },
+    "yard": {
+      "k": "Courtyard",
+      "t": "An enclosed, car-free courtyard",
+      "p": "The courtyard between the buildings is for people only: paths, shrubs and trees.",
+      "h0": "Playground",
+      "h1": "Above the courtyard",
+      "h2": "Entrance",
+      "h3": "12-storey building"
+    },
+    "play": {
+      "k": "Kids",
+      "t": "A playground in plain sight",
+      "p": "The playground sits in the middle of the courtyard; parents can watch from the balcony.",
+      "h0": "Playground",
+      "h1": "Through the arch",
+      "h2": "View from above"
+    },
+    "arch": {
+      "k": "Arch",
+      "t": "Entrance through a flower garden",
+      "p": "You enter the courtyard through arches and flower beds. Behind is the 12-storey single-entrance building.",
+      "h0": "12-storey building",
+      "h1": "Rear side",
+      "h2": "Back to the playground"
+    },
+    "aerial": {
+      "k": "From above",
+      "t": "Above the courtyard",
+      "p": "The playground is in the centre, parking stays outside — no cars in the courtyard.",
+      "h0": "Playground",
+      "h1": "Parking",
+      "h2": "Down to the courtyard"
+    },
+    "back": {
+      "k": "Rear side",
+      "t": "The lawn-side facade",
+      "p": "The rear of the 12-storey building faces a wide lawn and trees.",
+      "h0": "12-storey building",
+      "h1": "Back to start"
+    }
+  },
+  "tourCards": {
+    "shops": {
+      "k": "Retail",
+      "t": "Ground-floor shops",
+      "p": "The street-facing ground floor is fully commercial: large windows, separate entrances and steps. Daily shopping is a few steps from home."
+    },
+    "parking": {
+      "k": "Parking",
+      "t": "Space for cars",
+      "p": "Cars park on the streets around the buildings. No cars enter the courtyard, so children play safely."
+    },
+    "play": {
+      "k": "Kids",
+      "t": "Playground",
+      "p": "A fenced playground in the middle of the courtyard: soft surfacing, a tower play set and swings. Visible from the windows."
+    },
+    "entr": {
+      "k": "Entrance",
+      "t": "Entrances from the courtyard",
+      "p": "Entrances open onto the courtyard. A ramp beside the steps makes it easy with a pram."
+    },
+    "units": {
+      "k": "Apartments",
+      "t": "Balcony apartments on every floor",
+      "p": "Every apartment has a balcony; patterned screens shade it from the sun. Choose a floor to see available apartments."
+    }
+  }
+}

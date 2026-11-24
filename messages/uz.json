@@ -1,0 +1,330 @@
+{
+  "meta": {
+    "title": "Sadaf Residence — Bekobod",
+    "description": "12 va 16 qavatli turar-joy majmuasi: yopiq hovli, bolalar maydonchasi, birinchi qavatda do'konlar. Xonadonni onlayn tanlang."
+  },
+  "nav": {
+    "home": "Bosh sahifa",
+    "tour": "Sayohat",
+    "apartments": "Xonadonlar",
+    "buildings": "Uylar",
+    "contact": "Aloqa",
+    "cta": "Ko'rishga yozilish",
+    "menu": "Menyu",
+    "close": "Yopish",
+    "language": "Til",
+    "skip": "Asosiy qismga o'tish"
+  },
+  "common": {
+    "residence": "RESIDENCE",
+    "sample": "Namunaviy ma'lumot: narx va holatlar savdo bo'limi ro'yxati bilan almashtiriladi.",
+    "floor": "{n}-qavat",
+    "entrance": "{n}-podyezd",
+    "rooms": "{n, plural, =0 {Studiya} other {# xonali}}",
+    "apartmentNo": "№ {n}",
+    "back": "Orqaga",
+    "more": "Batafsil",
+    "all": "Barchasi",
+    "loading": "Yuklanmoqda…"
+  },
+  "status": {
+    "free": "Sotuvda",
+    "reserved": "Bron qilingan",
+    "sold": "Sotilgan",
+    "hidden": "Yashirin"
+  },
+  "orientation": {
+    "yard": "Hovli tomoni",
+    "street": "Ko'cha tomoni"
+  },
+  "home": {
+    "eyebrow": "Turar-joy majmuasi",
+    "lead": "12 va 16 qavatli uylar, mashinasiz yopiq hovli, bolalar maydonchasi va birinchi qavatda do'konlar. Xonadonni shu yerda tanlang.",
+    "pick": "Xonadon tanlash",
+    "tour": "Interaktiv sayohat",
+    "onSale": "Sotuvda {n} ta xonadon",
+    "factBuildings": "turdagi bino",
+    "factFloors": "qavat",
+    "factYard": "hovli",
+    "yardValue": "Yopiq",
+    "scroll": "Pastga aylantiring",
+    "aboutEyebrow": "Majmua haqida",
+    "aboutTitle": "Shahar ichida, lekin shovqindan uzoq yashash uchun uylar",
+    "aboutP1": "Majmua uch turdagi binodan iborat: 12 qavatli bir podyezdli, 12 qavatli ikki podyezdli va 16 qavatli besh podyezdli uy. Binolar hovlini o'rab turadi, shuning uchun ichkari tinch va xavfsiz.",
+    "aboutP2": "Pastki qavatlar g'isht bilan, yuqorisi och rangli suvoq bilan qoplangan. Balkonlar naqshli panjara bilan to'silgan. Ko'chaga qaragan birinchi qavatda do'kon va xizmat ko'rsatish joylari bor.",
+    "stepsEyebrow": "Qanday ishlaydi",
+    "stepsTitle": "Uch qadamda o'z xonadoningiz",
+    "step1": "Binoni va qavatni tanlang",
+    "step1t": "Fasaddagi qavat ustiga bosing — bo'sh xonadonlar darhol chiqadi.",
+    "step2": "Xonadonni ko'ring",
+    "step2t": "Reja, maydon, narx va bo'lib to'lash hisobi bitta sahifada.",
+    "step3": "Bron qiling yoki ariza qoldiring",
+    "step3t": "Menejer 15 daqiqa ichida qo'ng'iroq qiladi va ko'rishga taklif qiladi.",
+    "buildingsEyebrow": "Uylar",
+    "buildingsTitle": "Uch xil bino, bitta uslub",
+    "pickInBuilding": "Shu binodan tanlash",
+    "freeIn": "{n} ta bo'sh xonadon",
+    "priceFrom": "{price} dan",
+    "tourEyebrow": "Kinematik sayohat",
+    "tourTitle": "Majmua bo'ylab 9 sahnali sayohat",
+    "tourText": "Ko'chadan boshlab do'konlar, hovli, bolalar maydonchasi va uylarni aylanib chiqing. Oltin nuqtalarni bosing — kamera o'sha joyga olib boradi.",
+    "tourCta": "Sayohatni boshlash"
+  },
+  "building": {
+    "b12a": {
+      "tab": "12 qavat · 1 podyezd",
+      "tag": "Bino turi A",
+      "name": "12 qavatli, bir podyezdli uy",
+      "text": "Ixcham bir podyezdli uy. Pastki ikki qavat g'isht bilan, yuqorisi och suvoq bilan qoplangan. Har bir xonadonda balkon, burchak xonadonlarda ikki tomonga manzara."
+    },
+    "b12b": {
+      "tab": "12 qavat · 2 podyezd",
+      "tag": "Bino turi B",
+      "name": "12 qavatli, ikki podyezdli uy",
+      "text": "Uzunroq ikki podyezdli uy hovlini bir tomondan yopib turadi. Hovli tomondagi xonadonlar bolalar maydonchasi va yashil hududga qaraydi."
+    },
+    "b16": {
+      "tab": "16 qavat · 5 podyezd",
+      "tag": "Bino turi C",
+      "name": "16 qavatli, besh podyezdli uy",
+      "text": "Majmuaning eng baland binosi. Ko'chaga qaragan birinchi qavatda do'konlar, yuqori qavatlardan shahar manzarasi ochiladi."
+    },
+    "floors": "Qavatlar",
+    "entrances": "Podyezdlar",
+    "apartments": "Xonadonlar",
+    "onSale": "Sotuvda"
+  },
+  "picker": {
+    "eyebrow": "Xonadon tanlash",
+    "title": "Qavat ustiga bosing",
+    "hint": "Qavatni tanlang — o'sha qavatdagi xonadonlar o'ng tomonda chiqadi.",
+    "facade": "Fasad",
+    "grid": "Shaxmatka",
+    "table": "Ro'yxat",
+    "selectedFloor": "Tanlangan qavat",
+    "floorSummary": "{total} ta xonadon · {free} tasi sotuvda",
+    "filters": "Filtrlar",
+    "roomsLabel": "Xonalar",
+    "onlyFree": "Faqat sotuvdagilar",
+    "orientationLabel": "Tomoni",
+    "maxPrice": "Narx (gacha)",
+    "any": "Farqi yo'q",
+    "reset": "Tozalash",
+    "results": "{n} ta xonadon topildi",
+    "noResults": "Bu filtrlar bo'yicha xonadon yo'q. Filtrlarni yumshating.",
+    "open": "Ochish",
+    "floorList": "Qavatlar ro'yxati",
+    "colBuilding": "Bino",
+    "colEntrance": "Podyezd",
+    "colFloor": "Qavat",
+    "colNo": "№",
+    "colRooms": "Xona",
+    "colArea": "Maydon",
+    "colPrice": "Narx",
+    "colStatus": "Holat",
+    "legend": "Belgilar",
+    "freeOnFloor": "{n} bo'sh"
+  },
+  "apartment": {
+    "metaTitle": "{rooms} xonadon, {area} — {building}",
+    "breadcrumbs": "Navigatsiya",
+    "plan": "Xonadon rejasi",
+    "planNote": "Sxematik reja. Aniq o'lchamli reja savdo bo'limida beriladi.",
+    "tour360": "Ichkaridan 360°",
+    "tourSoon": "360° panorama tayyorlanmoqda. Hozircha namunaviy xonadonni sayohatda ko'ring.",
+    "tourOpen": "Sayohatni ochish",
+    "specs": "Xususiyatlar",
+    "building": "Bino",
+    "entrance": "Podyezd",
+    "floor": "Qavat",
+    "rooms": "Xonalar",
+    "area": "Maydon",
+    "side": "Tomoni",
+    "balcony": "Balkon",
+    "yes": "Bor",
+    "no": "Yo'q",
+    "price": "Narxi",
+    "pricePerM2": "1 m² narxi",
+    "book": "Bron qilish",
+    "ask": "Ariza qoldirish",
+    "unavailable": "Bu xonadon sotuvda emas. O'xshash bo'sh xonadonlarni ko'ring.",
+    "similar": "O'xshash xonadonlar",
+    "calc": "Bo'lib to'lash kalkulyatori",
+    "calcDown": "Boshlang'ich to'lov",
+    "calcMonths": "Muddat",
+    "calcMonthsValue": "{n} oy",
+    "calcMonthly": "Oylik to'lov",
+    "calcNote": "Taxminiy hisob, foizsiz. Aniq shartlarni menejer aytadi.",
+    "share": "Havola"
+  },
+  "lead": {
+    "titleBook": "Xonadonni bron qilish",
+    "titleAsk": "Ariza qoldiring",
+    "titleCall": "Qo'ng'iroq kutaman",
+    "text": "Raqamingizni qoldiring. Menejer qo'ng'iroq qilib, narx, to'lov shartlari va ko'rish vaqtini aytadi.",
+    "name": "Ismingiz",
+    "namePh": "Masalan, Dilshod",
+    "phone": "Telefon",
+    "submit": "Yuborish",
+    "sending": "Yuborilmoqda…",
+    "ok": "Rahmat, {name}! Menejer tez orada qo'ng'iroq qiladi.",
+    "errName": "Ismingizni kiriting.",
+    "errPhone": "To'liq raqam kiriting: +998 va 9 ta raqam.",
+    "errRate": "Juda ko'p urinish. Bir necha daqiqadan keyin qayta urinib ko'ring.",
+    "errOffline": "Onlayn ariza hali ulanmagan. Iltimos, {phone} raqamiga qo'ng'iroq qiling.",
+    "errGeneric": "Ariza yuborilmadi. Iltimos, {phone} raqamiga qo'ng'iroq qiling.",
+    "consent": "Yuborish orqali siz shaxsiy ma'lumotlaringizni qayta ishlashga rozilik bildirasiz.",
+    "apartment": "Xonadon"
+  },
+  "contact": {
+    "eyebrow": "Aloqa",
+    "title": "Uyni o'z ko'zingiz bilan ko'ring",
+    "text": "Raqamingizni qoldiring. Savdo bo'limi qo'ng'iroq qilib, narxlar, to'lov shartlari va bo'sh xonadonlar haqida aytib beradi.",
+    "phone": "Telefon",
+    "office": "Savdo ofisi",
+    "hours": "Ish vaqti",
+    "hoursValue": "Du–Sha, 9:00–19:00"
+  },
+  "footer": {
+    "note": "Vizualizatsiyalar loyiha renderlari asosida. Yakuniy ko'rinish farq qilishi mumkin.",
+    "rights": "Barcha huquqlar himoyalangan."
+  },
+  "tour": {
+    "eyebrow": "Interaktiv sayohat",
+    "intro": "Ko'chadan boshlab do'konlar, hovli, bolalar maydonchasi va uylarni aylanib chiqing. Oltin nuqtalarni bosing — kamera o'sha joyga olib boradi.",
+    "start": "Sayohatni boshlash",
+    "hint": "9 sahna · taxminan 3 daqiqa",
+    "skip": "O'tkazib yuborish",
+    "pan": "Surib atrofga qarang",
+    "prev": "Oldingi sahna",
+    "next": "Keyingi sahna",
+    "scenes": "Sahnalar",
+    "go": "O'tish",
+    "info": "Ma'lumot",
+    "bld": "Bino",
+    "pickFloor": "Qavat tanlash",
+    "price": "Narxni bilish",
+    "home": "Bosh sahifa"
+  },
+  "notFound": {
+    "title": "Sahifa topilmadi",
+    "text": "Havola eskirgan yoki xato yozilgan bo'lishi mumkin.",
+    "cta": "Bosh sahifaga qaytish"
+  },
+  "error": {
+    "title": "Nimadir noto'g'ri ketdi",
+    "text": "Ma'lumotlarni yuklab bo'lmadi. Birozdan keyin qayta urinib ko'ring.",
+    "retry": "Qayta urinish"
+  },
+  "plan": {
+    "living": "Mehmonxona",
+    "bedroom": "Yotoqxona",
+    "kids": "Bolalar",
+    "kitchen": "Oshxona",
+    "bath": "Hammom",
+    "wc": "Hojatxona",
+    "hall": "Dahliz",
+    "balcony": "Balkon"
+  },
+  "scenes": {
+    "hero": {
+      "k": "Majmua",
+      "t": "Ko'chadan ko'rinish",
+      "p": "16 qavatli uy majmuaning eng baland nuqtasi. Undan chaproqda 12 qavatli uylar.",
+      "h0": "16 qavatli uy",
+      "h1": "12 qavatli uylar",
+      "h2": "Ko'cha bo'ylab",
+      "h3": "Hovliga kirish"
+    },
+    "street": {
+      "k": "Ko'cha",
+      "t": "Keng ko'cha va yashil chiziq",
+      "p": "Uylar bo'ylab ikki qatorli yo'l, daraxtlar va maysazor.",
+      "h0": "Do'konlar tomon",
+      "h1": "Avtoturargoh",
+      "h2": "16 qavatli uy"
+    },
+    "shops": {
+      "k": "Do'konlar",
+      "t": "Birinchi qavat — savdo",
+      "p": "Vitrinali do'konlar ko'chaga qaraydi, har birining alohida kirishi bor.",
+      "h0": "Do'konlar",
+      "h1": "Fasad bo'ylab yuqoriga",
+      "h2": "Hovli tomon"
+    },
+    "facade": {
+      "k": "Fasad",
+      "t": "Naqshli panjara va keng balkonlar",
+      "p": "Har bir xonadonda balkon. Panjaralar soya beradi va fasadga milliy ohang qo'shadi.",
+      "h0": "Xonadonlar",
+      "h1": "12 qavatli uy"
+    },
+    "yard": {
+      "k": "Hovli",
+      "t": "Mashinasiz yopiq hovli",
+      "p": "Uylar orasidagi hovli faqat odamlar uchun: yo'laklar, butalar va daraxtlar.",
+      "h0": "Bolalar maydonchasi",
+      "h1": "Hovli ustidan",
+      "h2": "Podyezd",
+      "h3": "12 qavatli uy"
+    },
+    "play": {
+      "k": "Bolalar",
+      "t": "Ko'z oldidagi maydoncha",
+      "p": "Maydoncha hovli o'rtasida, ota-onalar balkondan kuzatib turadi.",
+      "h0": "Maydoncha",
+      "h1": "Ravoq orqali",
+      "h2": "Yuqoridan ko'rish"
+    },
+    "arch": {
+      "k": "Ravoq",
+      "t": "Gulzorli kirish yo'li",
+      "p": "Hovliga ravoqlar va gulzor orqali kiriladi. Orqada 12 qavatli bir podyezdli uy.",
+      "h0": "12 qavatli uy",
+      "h1": "Orqa tomon",
+      "h2": "Maydonchaga qaytish"
+    },
+    "aerial": {
+      "k": "Yuqoridan",
+      "t": "Hovli ustidan",
+      "p": "Bolalar maydonchasi markazda, avtoturargoh esa tashqarida — hovli ichiga mashina kirmaydi.",
+      "h0": "Bolalar maydonchasi",
+      "h1": "Avtoturargoh",
+      "h2": "Hovliga tushish"
+    },
+    "back": {
+      "k": "Orqa tomon",
+      "t": "Maysazor tomondagi fasad",
+      "p": "12 qavatli uyning orqa tomoni keng maysazor va daraxtlarga qaraydi.",
+      "h0": "12 qavatli uy",
+      "h1": "Boshiga qaytish"
+    }
+  },
+  "tourCards": {
+    "shops": {
+      "k": "Savdo",
+      "t": "Birinchi qavatdagi do'konlar",
+      "p": "Ko'chaga qaragan birinchi qavat to'liq tijorat uchun: katta vitrinalar, alohida kirish joylari va zinapoyalar. Kundalik xaridlar uydan bir necha qadamda."
+    },
+    "parking": {
+      "k": "Avtoturargoh",
+      "t": "Mashinalar uchun joy",
+      "p": "Avtomobillar uylar atrofidagi ko'chalarda turadi. Hovli ichiga mashina kirmaydi, bolalar xavfsiz o'ynaydi."
+    },
+    "play": {
+      "k": "Bolalar",
+      "t": "Bolalar maydonchasi",
+      "p": "To'siq bilan o'ralgan maydoncha hovli o'rtasida. Yumshoq qoplama, minorali o'yin majmuasi, arg'imchoqlar. Uylarning derazalaridan ko'rinib turadi."
+    },
+    "entr": {
+      "k": "Podyezd",
+      "t": "Hovli tomondan kirish",
+      "p": "Podyezdlarga hovli ichidan kiriladi. Zinapoya yonida pandus bor, aravacha bilan ham qulay."
+    },
+    "units": {
+      "k": "Xonadonlar",
+      "t": "Har qavatda balkonli xonadonlar",
+      "p": "Har bir xonadonda balkon bor, naqshli panjaralar quyoshdan soya beradi. Qavatni tanlab, bo'sh xonadonlarni ko'ring."
+    }
+  }
+}
