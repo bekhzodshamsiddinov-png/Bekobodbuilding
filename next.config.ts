@@ -59,6 +59,15 @@ const nextConfig: NextConfig = {
       { source: "/:path*", headers: securityHeaders },
       // API responses must never be cached by shared caches.
       { source: "/api/:path*", headers: [{ key: "Cache-Control", value: "no-store" }] },
+      // Staff panel: never indexed, never stored by shared caches.
+      {
+        source: "/crm/:path*",
+        headers: [
+          { key: "X-Robots-Tag", value: "noindex, nofollow" },
+          { key: "Cache-Control", value: "private, no-store" },
+        ],
+      },
+      { source: "/crm", headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }] },
     ];
   },
   turbopack: {

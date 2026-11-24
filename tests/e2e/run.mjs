@@ -186,6 +186,44 @@ try {
     await p.close();
   });
 
+
+  await check("CRM (demo): board, drawer, bulk price, leads, noindex", async () => {
+    const r = await fetch(BASE + "/crm/shaxmatka");
+    assert(r.headers.get("x-robots-tag")?.includes("noindex"), "x-robots-tag");
+    assert(r.headers.get("cache-control")?.includes("no-store"), "crm no-store");
+    const p = await desktop.newPage();
+    await p.goto(BASE + "/crm", { waitUntil: "load" });
+    await p.waitForURL(/\/crm\/shaxmatka/);
+    assert(await p.getByText(/Demo rejim/).isVisible(), "demo banner");
+    await p.getByRole("tab", { name: "16/5" }).click();
+    const cell = p.getByRole("button", { name: /^№701, Sotuvda/ }).first();
+    await cell.click();
+    const drawer = p.getByRole("dialog");
+    await drawer.getByRole("button", { name: "Bron qilingan" }).click();
+    await p.screenshot({ path: `${SHOTS}/crm-board.png` });
+    await drawer.getByRole("button", { name: "Saqlash" }).click();
+    await p.getByText(/Demo: o'zgarish saqlanmadi/).waitFor({ timeout: 5000 });
+    await p.getByText("Ommaviy narx o'zgartirish").click();
+    await p.getByLabel("Foiz (%)").fill("5");
+    p.once("dialog", (d) => d.accept());
+    await p.getByRole("button", { name: "Qo'llash" }).click();
+    await p.getByText(/Demo: narxlar/).waitFor({ timeout: 5000 });
+    await p.goto(BASE + "/crm/lidlar", { waitUntil: "load" });
+    assert(await p.getByRole("region", { name: "Yangi" }).isVisible(), "kanban");
+    await p.getByRole("button", { name: "Keyingi bosqich" }).first().click();
+    await p.screenshot({ path: `${SHOTS}/crm-leads.png` });
+    await p.close();
+  });
+
+  await check("CRM on 375px: no horizontal page scroll", async () => {
+    const p = await mobile.newPage();
+    await p.goto(BASE + "/crm/shaxmatka", { waitUntil: "load" });
+    const sw = await p.evaluate(() => document.documentElement.scrollWidth);
+    assert(sw <= 375, `scrollWidth ${sw}`);
+    await p.screenshot({ path: `${SHOTS}/crm-mobile.png` });
+    await p.close();
+  });
+
   await check("unknown pages return 404", async () => {
     for (const path of ["/xonadon/does-not-exist", "/xonadon/..%2f..%2fetc", "/nope", "/ru/nope"]) {
       const r = await fetch(BASE + path);

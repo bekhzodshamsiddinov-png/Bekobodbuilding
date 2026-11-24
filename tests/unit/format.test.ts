@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { formatArea, formatPhone, formatUSD, formatUZS, isValidUzPhone, monthlyPayment, NBSP } from "@/lib/format";
+import { formatArea, formatDateTime, formatPhone, formatUSD, formatUZS, isValidUzPhone, monthlyPayment, NBSP } from "@/lib/format";
 
 const sp = (s: string) => s.replaceAll(NBSP, " ");
 
@@ -51,5 +51,12 @@ describe("instalments", () => {
   it("clamps nonsense input", () => {
     expect(monthlyPayment(1_200, -10, 12)).toBe(100);
     expect(monthlyPayment(1_200, 30, 0)).toBe(0);
+  });
+});
+
+describe("date", () => {
+  it("formats in Tashkent time", () => {
+    expect(formatDateTime("2026-11-23T09:15:00.000Z")).toBe("23.11.2026 14:15");
+    expect(formatDateTime("2026-12-31T20:00:00Z")).toBe("01.01.2027 01:00");
   });
 });

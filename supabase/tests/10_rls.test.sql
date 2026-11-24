@@ -200,4 +200,38 @@ begin
 end $$;
 rollback;
 
+
+\echo '11. bulk_reprice: heads only, bounded, audited, skips sold'
+begin;
+select pg_temp.act_as('authenticated', '11111111-0000-4000-8000-000000000003');
+do $$ begin
+  begin perform public.bulk_reprice('00000000-0000-4000-8002-000000000001', 5); raise exception 'manager bulk repriced';
+  exception when insufficient_privilege then null; end;
+end $$;
+select pg_temp.act_as('authenticated', '11111111-0000-4000-8000-000000000002');
+do $$
+declare n int; before_sold bigint; before_free bigint;
+begin
+  select sum(price_uzs) into before_sold from public.apartments where building_id = '00000000-0000-4000-8002-000000000001' and status = 'sold';
+  select sum(price_usd) into before_free from public.apartments where building_id = '00000000-0000-4000-8002-000000000001' and status = 'free';
+  begin perform public.bulk_reprice('00000000-0000-4000-8002-000000000001', 80); raise exception '80%% accepted';
+  exception when invalid_parameter_value then null; end;
+  n := public.bulk_reprice('00000000-0000-4000-8002-000000000001', 10);
+  if n <> (select count(*) from public.apartments where building_id = '00000000-0000-4000-8002-000000000001' and status = 'free') then
+    raise exception 'wrong row count %', n; end if;
+  if (select sum(price_uzs) from public.apartments where building_id = '00000000-0000-4000-8002-000000000001' and status = 'sold') <> before_sold then
+    raise exception 'sold prices changed'; end if;
+  if (select sum(price_usd) from public.apartments where building_id = '00000000-0000-4000-8002-000000000001' and status = 'free') <= before_free then
+    raise exception 'free prices not raised'; end if;
+  if (select count(*) from public.audit_log where table_name = 'apartments') <> n then raise exception 'not audited'; end if;
+end $$;
+rollback;
+begin;
+select pg_temp.act_as('anon', null);
+do $$ begin
+  begin perform public.bulk_reprice('00000000-0000-4000-8002-000000000001', 5); raise exception 'anon bulk repriced';
+  exception when insufficient_privilege then null; end;
+end $$;
+rollback;
+
 \echo 'ALL DATABASE TESTS PASSED'

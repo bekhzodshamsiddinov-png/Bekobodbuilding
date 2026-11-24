@@ -86,6 +86,10 @@ export type Database = {
         };
         Returns: string;
       };
+      bulk_reprice: {
+        Args: { p_building_id: string; p_percent: number; p_only_free?: boolean; p_rooms?: number | null };
+        Returns: number;
+      };
     };
     Enums: {
       apartment_status: "free" | "reserved" | "sold" | "hidden";

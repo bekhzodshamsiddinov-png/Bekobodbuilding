@@ -56,3 +56,10 @@ export function monthlyPayment(price: number, downPercent: number, months: numbe
   if (months <= 0) return 0;
   return Math.ceil((price - down) / months);
 }
+
+/** "2026-11-23T09:15:00Z" → "23.11.2026 14:15" in Tashkent time (UTC+5, no DST). Same on server and client. */
+export function formatDateTime(iso: string): string {
+  const d = new Date(new Date(iso).getTime() + 5 * 3600_000);
+  const p = (n: number) => String(n).padStart(2, "0");
+  return `${p(d.getUTCDate())}.${p(d.getUTCMonth() + 1)}.${d.getUTCFullYear()} ${p(d.getUTCHours())}:${p(d.getUTCMinutes())}`;
+}
