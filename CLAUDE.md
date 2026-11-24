@@ -143,6 +143,9 @@ pnpm seed:gen       # lib/demo/sadaf.ts → supabase/seed.sql
 
 - Ulangan: Vercel, Figma, Magic Patterns, GitHub (repo: bekhzodshamsiddinov-png/Bekobodbuilding).
 - Ulash kerak: **Supabase** (eng muhimi), Cloudflare; ixtiyoriy Sentry.
+- UI/UX maketlari (Magic Patterns): https://www.magicpatterns.com/os/2i3hu4rmp4NfmULA8NDc4V —
+  bosh sahifa, xonadonlar, xonadon sahifasi, CRM shaxmatka, CRM lidlar kanbani (desktop + 390 px).
+- Jonli sayt (Vercel): https://bekobodbuilding.vercel.app
 
 ## Ochiq savollar (buyurtmachidan)
 
