@@ -10,6 +10,7 @@
 | Rollar | Yangi foydalanuvchi rolsiz (hech narsa ko'rmaydi). O'zini ko'tarish taqiqlangan (trigger). Owner rolini faqat owner beradi. Menejer narxni o'zgartira olmaydi. `audit_log` ni API orqali yozib/o'chirib bo'lmaydi |
 | Telegram | Webhook `X-Telegram-Bot-Api-Secret-Token` bilan (timing-safe taqqoslash); foydalanuvchi matni HTML-escape qilinadi; token hech qachon log qilinmaydi |
 | Kalitlar | Faqat `.env.local` / Vercel env. Brauzerga faqat Supabase URL va publishable (anon) key chiqadi |
+| CRM | `/crm` — `X-Robots-Tag: noindex`, `Cache-Control: private, no-store`. Har server action sessiya va rolni qayta tekshiradi; yozuvlar foydalanuvchi sessiyasi bilan (RLS ostida). `bulk_reprice()` SECURITY INVOKER: ±50% chegara, sotilganlar o'zgarmaydi, har qator audit'ga. Kirish xatosi bir xil matn (akkaunt borligini oshkor qilmaydi). Supabase ulanmagan bo'lsa demo rejim: hech narsa saqlanmaydi |
 | Fayllar | Pasport skanlari xususiy `passports` bucket'da, faqat owner va lawyer |
 
 ## Rol matritsasi
@@ -27,7 +28,7 @@
 
 ## Tekshirish
 
-- `pnpm test:db` — 10 ta RLS / biznes qoida testi lokal PostgreSQL'da (`supabase/tests/10_rls.test.sql`).
+- `pnpm test:db` — 11 ta RLS / biznes qoida testi lokal PostgreSQL'da (`supabase/tests/10_rls.test.sql`).
 - `pnpm test:e2e` — headerlar, 404, API validatsiya, Origin, body limit, honeypot, rate limit, webhook secret.
 
 ## Ma'lum cheklovlar

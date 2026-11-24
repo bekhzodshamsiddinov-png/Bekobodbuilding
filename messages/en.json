@@ -414,5 +414,116 @@
     "b16-street": "16-storey building from the street",
     "b16-far": "16-storey building from afar",
     "b16-pano": "Complex panorama"
+  },
+  "crm": {
+    "title": "Sadaf CRM",
+    "demo": "Demo rejim: baza ulanmagan, namunaviy ma'lumot. O'zgarishlar saqlanmaydi.",
+    "nav": {
+      "shaxmatka": "Shaxmatka",
+      "lidlar": "Lidlar",
+      "mijozlar": "Mijozlar",
+      "bronlar": "Bronlar",
+      "tolovlar": "To'lovlar",
+      "hisobotlar": "Hisobotlar",
+      "sozlamalar": "Sozlamalar",
+      "soon": "tez orada",
+      "site": "Saytni ochish",
+      "logout": "Chiqish",
+      "menu": "Menyu"
+    },
+    "roles": {
+      "owner": "Rahbar",
+      "sales_head": "Savdo boshlig'i",
+      "manager": "Menejer",
+      "accountant": "Buxgalter",
+      "lawyer": "Yurist",
+      "admin": "Administrator"
+    },
+    "login": {
+      "title": "Xodimlar uchun kirish",
+      "email": "Email",
+      "password": "Parol",
+      "submit": "Kirish",
+      "sending": "Tekshirilmoqda…",
+      "credentials": "Email yoki parol noto'g'ri.",
+      "invalid": "Email va parolni to'liq kiriting.",
+      "note": "Ro'yxatdan o'tish yopiq. Hisobni rahbar yoki administrator ochadi."
+    },
+    "wait": {
+      "title": "Hisobingiz tasdiqlanmagan",
+      "text": "Rahbar yoki administrator sizga rol bergach, CRM ochiladi.",
+      "logout": "Chiqish"
+    },
+    "kpi": {
+      "free": "Sotuvda",
+      "reserved": "Bron",
+      "sold": "Sotilgan",
+      "hidden": "Yashirin",
+      "freeSum": "Sotuvdagilar summasi",
+      "bln": "{n} mlrd so'm"
+    },
+    "board": {
+      "title": "Shaxmatka",
+      "building": "Bino",
+      "filter": "Holat",
+      "all": "Barchasi",
+      "legend": "Belgilar",
+      "entrance": "{n}-podyezd",
+      "floor": "Qavat",
+      "open": "Saytda ochish",
+      "bulk": "Ommaviy narx o'zgartirish",
+      "bulkHint": "Tanlangan binodagi narxlarni foizga o'zgartiradi. Sotilganlar o'zgarmaydi.",
+      "percent": "Foiz (%)",
+      "onlyFree": "Faqat sotuvdagilar",
+      "rooms": "Xonalar",
+      "anyRooms": "Hammasi",
+      "apply": "Qo'llash",
+      "confirm": "{building}: narxlar {percent}% ga o'zgaradi. Davom etasizmi?",
+      "bulkDone": "{n} ta xonadon narxi yangilandi.",
+      "bulkDemo": "Demo: narxlar faqat shu ekranda o'zgardi."
+    },
+    "drawer": {
+      "title": "Xonadon {n}",
+      "status": "Holat",
+      "priceUzs": "Narx (so'm)",
+      "priceUsd": "Narx ($)",
+      "save": "Saqlash",
+      "saving": "Saqlanmoqda…",
+      "saved": "Saqlandi. Saytda darhol yangilandi va audit jurnaliga yozildi.",
+      "savedDemo": "Demo: o'zgarish saqlanmadi.",
+      "priceLocked": "Narxni faqat rahbar, savdo boshlig'i yoki administrator o'zgartiradi.",
+      "close": "Yopish",
+      "specs": "{rooms} xona · {area} · {entrance}-podyezd, {floor}-qavat"
+    },
+    "errors": {
+      "auth": "Sessiya tugagan. Qaytadan kiring.",
+      "forbidden": "Bu amal uchun huquqingiz yo'q.",
+      "invalid": "Qiymatlar noto'g'ri.",
+      "failed": "Saqlab bo'lmadi. Qayta urinib ko'ring."
+    },
+    "leads": {
+      "title": "Lidlar",
+      "empty": "Bo'sh",
+      "claim": "Menga olish",
+      "mine": "Meniki",
+      "unassigned": "Biriktirilmagan",
+      "back": "Oldingi bosqich",
+      "next": "Keyingi bosqich",
+      "call": "Qo'ng'iroq",
+      "apartment": "Xonadon",
+      "total": "{n} ta lid",
+      "stages": {
+        "new": "Yangi",
+        "contacted": "Bog'lanildi",
+        "meeting": "Uchrashuv",
+        "reserved": "Bron",
+        "contract": "Shartnoma",
+        "lost": "Rad etildi"
+      },
+      "sources": {
+        "site": "Sayt",
+        "telegram": "Telegram"
+      }
+    }
   }
 }

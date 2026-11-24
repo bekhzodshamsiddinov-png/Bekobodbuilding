@@ -111,8 +111,9 @@ Qoidalar:
 5. **Pul va mijoz** — shartnoma shablonlari, bo'lib to'lash grafigi, Payme/Click, SMS, mijoz kabineti.
 6. **O'sish** — AI yordamchi (sayt + Telegram), reklama analitikasi, SEO sahifalari.
 
-Hozirgi bosqich: **1 — Asos tayyor, 2 — Sotuvchi sayt MVP asosan tayyor** (bosh sahifa, sayohat, xonadon tanlash,
-xonadon sahifasi, ariza → baza → Telegram). Keyingisi: Supabase loyihasini ulash, keyin 3 — CRM yadrosi.
+Hozirgi bosqich: **1–2 tayyor, 3 — CRM yadrosi boshlandi**: `/crm` (kirish, rollar, kutish sahifasi),
+shaxmatka (holat/narx tahriri, ommaviy narx `bulk_reprice`), lidlar kanbani. Qoldi: mijoz kartasi, bronlar
+(`reservations`), rahbar paneli, Realtime. Supabase ulanmaguncha CRM demo rejimda (o'zgarishlar saqlanmaydi).
 
 ## Qabul qilingan texnik qarorlar (2026-11-23)
 
@@ -130,6 +131,9 @@ xonadon sahifasi, ariza → baza → Telegram). Keyingisi: Supabase loyihasini u
 - Bosh sahifa tuzilmasi (2026-11-24, fazoavenue.uz tahlilidan keyin): raqamlangan bo'limlar (`SectionHead`),
   raqamlar bandi, 2 ta scroll-film (Webuy), afzalliklar, infratuzilma videolari, rejalar katalogi, o'rtada forma,
   uylar, to'lov kalkulyatori, galereya, sayohat, aloqa; doimiy kontakt tugmasi (`FloatingContact`).
+- **CRM** (`app/crm`, har doim o'zbekcha, noindex): `getStaff()/requireStaff()` (`lib/crm/session.ts`),
+  server actions `app/crm/actions.ts` — har biri sessiya + rolni qayta tekshiradi, baza RLS bilan yana tekshiradi;
+  o'zgarishdan keyin `updateTag('inventory')` → sayt darhol yangilanadi. Lidlarni surish: tugmalar (klaviatura uchun).
 - `sayohat` to'liq ekranli bo'lgani uchun `app/[locale]/(immersive)/sayohat` da (sayt header/footer'isiz).
 
 ## Buyruqlar

@@ -13,6 +13,7 @@ Premium sotuv sayti va CRM, bitta Supabase bazasidan. Uslub va media — [Webuy]
 | Xonadon sahifasi: reja, xususiyatlar, narx (so'm/$), bo'lib to'lash kalkulyatori, Bron / Ariza, o'xshashlar | `/xonadon/b16-p3-0704` |
 | 9 sahnali kinematik sayohat (hotspotlar, o'tish videolari, bino kartalari, `#yard` havolalari) | `/sayohat` |
 | Aloqa | `/aloqa` |
+| CRM: kirish, shaxmatka (holat/narx, ommaviy narx), lidlar kanbani | `/crm` |
 | Tillar | `/` (uz), `/ru`, `/en` |
 | API | `POST /api/leads`, `POST /api/telegram/webhook`, `GET /api/health` |
 
